@@ -1,0 +1,86 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ubah ke flex-start agar tidak terlalu di tengah */
+    min-height: 100vh;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Sudut kiri bulat */
+}
+
+#add-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0; /* Sudut kanan bulat */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-button:hover {
+    background-color: #0056b3;
+}
+
+/* LIST TUGAS */
+#task-list {
+    list-style: none; /* Hilangkan bullet point default */
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    cursor: pointer; /* Menandakan bisa diklik untuk status selesai */
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* STYLE UNTUK TUGAS YANG SUDAH SELESAI */
+.completed {
+    text-decoration: line-through; /* Coret teks */
+    color: #888;
+    background-color: #e9e9e9 !important;
+  }
